@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    line-height: 1.5;
+    color: #fff;
+    padding-top: 50px; /* Space for navbar */
+    
+}
+
+.navbar {
+    position: fixed; /* Make navbar stick at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000; /* Ensure navbar is on top */
+    background-color: rgba(70, 57, 57, 0.7); /* Add transparency or color */
+    color: #fff;
+}
+
+.nav1 {
+    width: 20%;
+    height: 50px;
+    float: left;
+}
+
+.nav1 img {
+    margin-top: -10px;
+}
+
+.nav2 {
+    width: 60%;
+    height: 50px;
+    font-size: 20px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+.nav2 a:after{
+    content: "";
+    position: absolute;
+    background-color: #9b73e4;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.nav2 a:hover:after{
+    width: 100%;
+    
+}
+.nav2 a:hover{
+    color: aqua;
+    
+}
+.nav2 a {
+    position: relative;
+    text-decoration: none;
+    color: #dfdfdf;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+/* Button Sign Up */
+.nav3{
+    height: 60px;
+    width: 100%;
+    margin-top: 12px;
+}
+.signup-btn {
+    height: 60px;
+    font-size: 20px;
+    
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 80px;
+    
+}
+.signup-form {
+    display: none;
+    width: 30%;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent */
+    backdrop-filter: blur(5px); /* Background blur effect */
+    border-radius: 10px;
+    position: absolute;
+    top: 300%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 0);
+    
+}
+input, button {
+    display: block;
+    width: 50%;
+    margin: 10px ;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.nav3 .signup-form input{
+    margin-left: 100px;
+}
+.nav3 .signup-form button{
+    width: 100px;
+    margin-left: 170px;
+    float: left;
+}
+
+.nav3 :hover {
+    color: aqua;
+}
+
+
+
+.container1 {
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-color: #ffffff;
+    padding: 0 20px;
+    
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    width: 60%;
+    height: 700px;
+    
+    text-align: center;
+    color: rgb(0, 0, 0);
+    
+    text-decoration: none;
+}
+.block1{
+    width: 100%;
+    height: 750px;
+    background-color: rgb(223, 220, 220);
+    
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+.image-placeholder {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #000000;
+}
+.rular {
+    width: 2px;
+    background: black;
+    height: 150px;
+}
+.text-box-london {
+    text-align: left;
+    max-width: 300px;
+}
+.features-london {
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 100px;
+    text-align: left;
+}
+.footer2{
+    width: 40%;
+    height: 80px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container6{
+    height: 180px;
+    width: 100%;
+    background-color: rgb(37, 36, 36);
+}
+.foot1 {
+    height: 180px;
+    width: 30%;
+    float: left;
+    
+}
+.foot1 img{
+    margin-top: -32px;
+}
+.foot2 {
+    
+    width: 50%;
+    float: left;
+    margin-top: 40px;
+}
+.foot3 {
+    height: 10px;
+    width: 20%;
+    float: left;
+}
+.foot-text img{
+    cursor: pointer;
+}
+.foot-text{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.space1{
+    width: 10px;
+}
+.foot3 p{
+    width: 100%;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+.foot2 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

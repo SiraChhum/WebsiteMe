@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Resonance</title>
+    <link rel="icon" href="img/Sword.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container1"id="Home">
+        <div class="video-container">
+            <video src="video/1.mp4" autoplay muted loop></video>
+        </div>
+        <div class="navbar">
+            <div class="nav1">
+                <img src="img/Untitled-1.png" width="50%">
+            </div>
+            <div class="nav2">
+                <table width="80%" align="center" text-color="white">
+                    <tr>
+                        <th><a href="#Home">Home</a></th>
+                        <th><a href="#Display Map">Map Display</a></th>
+                        <th><a href="#Display Career">Career Display</a></th>
+                        <th><a href="#Game feature">Game Features</a></th>
+                        <th><a href="#News">News</a></th>
+                    </tr>
+                </table>
+            </div>
+            <div class="nav3">
+                <a class="signup-btn" onclick="showSignUp()">Sign Up</a>
+                <div class="signup-form" id="signupForm">
+                    <div class="check-box">
+                        <h2>Sign Up</h2>
+                        <input type="text" id="username" placeholder="Username">
+                        <input type="email" id="email" placeholder="Email">
+                        <input type="password" id="password" placeholder="Password">
+                    </div>
+                    <input type="checkbox"id="checkbox">Are you alone?</input>
+                    <button onclick="submitSignUp()">Sign Up</button>
+                    <button onclick="cancelSignUp()">Cancel</button>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="block1">
+                    <h1>With he World</h1>  
+                    <h2>Beautiful Resonance</h2>  
+                <div class="button11">
+                    <button class="button1">Play Now!</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container2" id="Display Map">
+            <div class="video-body">
+                <div class="video-box" >
+                    <video width="550" height="280" autoplay muted><source src="video/map display.mp4" type="video/mp4"></video>
+                </div>
+                <video src="video/portrait.mp4" type="video/mp4" autoplay muted loop></video>  
+                <div class="textword">
+                    Display Map
+                </div>
+                <div class="textword1">
+                    Show Case
+                </div>
+                <div class="textword2">
+                    <a href="Mapplay/index.html">Map in the Game</a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container3" id="Display Career">
+        <div class="box-slide">
+            <h2>Display Career</h2>turturia
+            <h1>Show Case </h1>
+            <p>Blade Guardian</p>
+            <p>Summon rock to protect our companions</p>
+            <p>It has comprehensive capabilities and can cope with various damage-bearing environments.</p>
+            <a href="Turturia/Turturia.html"><h3>Tutorial</h3></a>
+        </div>
+        <div class="box-slideshow">
+            <div class="slideshow-container">
+                <div class="slide">
+                    <video src="video/2.mp4" alt="video 1" autoplay muted >
+                </div>
+                <div class="slide">
+                    <video src="video/3.mp4" alt="video 2" autoplay muted>
+                </div>
+                <div class="slide">
+                    <video src="video/4.mp4" alt="video 3" autoplay muted>
+                </div>
+        
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        
+            <div class="dots">
+                <span class="dot" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+            </div>
+        </div>
+    </div>
+    <div class="container4" id="Game feature">
+        <div class="text-feature">
+            <p>Game feature</p>
+        </div>
+        <div class="Features">
+            <div class="pic1">
+                <img src="img/feature3.jpg" width="100%">
+            </div>
+        </div>
+        <div class="Features1">
+            <div class="pic2">
+                <div class="p1">
+                    <img src="img/IMG_3366.JPG" width="40%">
+                    <img src="img/IMG_3367.JPG" width="40%">
+                    <img src="img/IMG_3369.JPG" width="40%">
+                    <img src="img/IMG_3370.JPG" width="40%">
+                    <img src="img/IMG_3371233.png" width="40%">
+                    <img src="img/IMG_3371.JPG" width="40%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container5" id="News">
+        <div class="footer">
+            <div class="news-header">
+                <div class="spread-text">News</div>
+                <h1>MMORPG</h1>
+            </div>
+            
+            <div class="content-area">
+                <div class="news-list">
+                    <div class="news-nav">
+                        <div class="nav-item active">Latest Update</div>
+                    </div>
+                    
+                    <div class="news-items">
+                        <div class="news-item">
+                            <div class="news-item-title">Summary of ways to check your experience qualification</div>
+                        </div>
+                    </div>
+                    
+                    <button class="see-more-btn"><a href="News/index.html"> More</a></button>
+
+                </div>
+                
+                <div class="news-image" onclick="switchImage()" >
+                    <img src="img/1318045.jpg" class="active" width="40%">
+                    <img src="img/bg.png" class="hidden" width="40%">
+                </div>
+            </div>
+        </div>
+        <div class="footer2">
+
+        </div>
+    </div>
+    <div class="container6">
+        
+        <div class="foot1">
+            <img src="img/Untitled-1.png" width="400px">
+
+        </div>
+        <div class="foot2">
+            <p>Tencent Interactive Entertainment | Terms of Service | Privacy Protection Guidelines | Children's Privacy Protection Guidelines | Tencent Games Recruitment | Tencent Games Customer Service | Game List | Advertising Services and</p>
+        </div>
+        <div class="foot3">
+            <p>Social</p>
+            <div class="foot-text">
+                <a href="https://www.facebook.com/laiheang.chhay.3" target="_blank"><img src="img/facebook (1).png" width="80%"></a>
+                <a href="https://www.facebook.com/laiheang.chhay.3" target="_blank"><img src="img/instagram.png" width="80%"></a>
+                <a href="https://www.facebook.com/laiheang.chhay.3" target="_blank"><img src="img/whatsapp.png" width="80%"></a>
+                <a href="https://www.facebook.com/laiheang.chhay.3" target="_blank"><img src="img/telegram.png" width="80%"></a>
+            </div>
+        </div>
+    </div>
+    <script src="Javascript/java.js"></script>
+</body>
+</html>

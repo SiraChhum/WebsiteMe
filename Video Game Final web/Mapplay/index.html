@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container1">
+        <!-- <div class="video-container">
+            <video src="video/1.mp4" autoplay muted loop></video>
+        </div> -->
+        <div class="navbar">
+            <div class="nav1">
+                <img src="img/Untitled-1.png" width="50%">
+            </div>
+            <div class="nav2">
+                <table width="80%" align="center" text-color="white">
+                    <tr>
+                        <th><a href="../index.html">Home</a></th>
+                        <th><a href="../index.html">Map Display</a></th>
+                        <th><a href="../index.html">Career Display</a></th>
+                        <th><a href="../index.html">Game Features</a></th>
+                        <th><a href="../index.html">News</a></th>
+                    </tr>
+                </table>
+            </div>
+            <div class="nav3">
+                <a class="signup-btn" onclick="showSignUp()">Sign Up</a>
+                <div class="signup-form" id="signupForm">
+                    <h2>Sign Up</h2>
+                    <input type="text" id="username" placeholder="Username">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="password" id="password" placeholder="Password">
+                    <button onclick="submitSignUp()">Sign Up</button>
+                    <button onclick="cancelSignUp()">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h1><strong> Mapplay</strong></h1>
+            <div class="block1">
+                <h1>London</h1>
+                <div class="container">
+                    <div class="image-placeholder">
+                        <img src="img/1318045.jpg" width="100%">
+                    </div>
+                    <div class="rular"></div>
+                    <div class="text-box-london">
+                        <p><strong>Theme:</strong> Gothic Fantasy, Dark Magic, and Steampunk Aesthetics</p>
+                        <p><strong>Setting:</strong> A sprawling city blending medieval architecture with steampunk machinery, shrouded in an eternal twilight due to a mysterious magical eclipse.</p>
+                    </div>
+                </div>
+                <div class="features-london">
+                    <p><strong>Key Locations & Unique Features:</strong></p>
+                    <p>The Clockwork Spire A massive, mechanical tower at the heart of London, controlling the city’s time flow. Players can manipulate time in certain areas, slowing down enemies or unlocking hidden paths.</p>
+                    <p><strong>The Phantom Boroughs :</strong></p>
+                    <p>where lost souls whisper secrets of hidden treasures and forbidden magic. Only those with the Wraith Lantern can navigate safely.</p>
+                    <p><strong>The Hollow Thames:</strong></p>
+                    <p>The legendary river runs black with cursed water. Strange aquatic creatures lurk beneath, and at midnight, the Drowned King emerges as a world boss.</p>
+                    <p><strong>The Royal Catacombs:</strong></p>
+                    <p>Beneath Buckingham Keep lie ancient burial chambers filled with the spirits of fallen knights and necrotic horrors. Players must battle through crypt guardians to uncover a lost royal relic.</p>
+                </div>
+            </div>
+            <div class="block2">
+                <h1>Arizona</h1>
+                <div class="container2">
+                    <div class="image-placeholder2">
+                        <img src="img/bg.png" width="100%">
+                    </div>
+                    <div class="rular2"></div>
+                    <div class="text-box-arizona">
+                        <p><strong>Theme:</strong> Wild West Meets Mythical Beasts and Ancient Spirits</p>
+                        <p><strong>Setting:</strong> A vast desert landscape filled with abandoned towns, supernatural canyons, and fiery spirits roaming the sands.</p>
+                    </div>
+                </div>
+                <div class="features-arizona">
+                    <p><strong>Key Locations & Unique Features</strong></p>
+                    <p><strong>Red Rock Canyon :</strong></p>
+                    <p>A breathtaking canyon filled with mystical totems and hidden caves. At sunset, Fire Spirits emerge, creating new challenges and opportunities.</p>
+                    <p><strong>The Ghost Town of Eldorado :</strong></p>
+                    <p>A once-thriving gold-mining settlement now overrun by spectral cowboys and bandits. At its center lies The Haunting Saloon, where a ghostly bartender offers quests and riddles.</p>
+                    <p><strong>The Ghost Town of Eldorado :</strong></p>
+                    <p>A valley filled with the bones of colossal creatures. Rumors say that the right ritual can awaken a Bone Goliath, a terrifying world boss.</p>
+                </div>
+            </div>
+            <div class="block3">
+                <h1>Taipei</h1>
+                <div class="container2">
+                    <div class="image-placeholder2">
+                        <img src="img/some-photos-i-took-of-golden-trees-in-liyue-v0-08qx0dqo0gv91.webp" width="100%">
+                    </div>
+                    <div class="rular2"></div>
+                    <div class="text-box-arizona">
+                        
+                        <p><strong>Overview</strong>
+                            Taipei is a breathtaking new map in your MMORPG, blending fantasy elements with stunning natural beauty and mystical energy. This vast, open-world region features towering mountains, enchanted forests, and ancient ruins, all infused with magical energy. Players will explore legendary temples, hidden valleys, and sky-high peaks filled with both wonder and danger.</p>
+                    </div>
+                </div>
+                <div class="features-arizona">
+                    <p><strong>Key Locations & Unique Features</strong></p>
+                    <p><strong>Celestial Peak (Mountain Summit & Floating Isles) :</strong></p>
+                    <p>At the highest point of Taipei, Celestial Peak is a series of floating islands connected by ancient stone bridges and glowing energy paths. The air is filled with swirling mist, and mythical phoenixes soar between the peaks. Players who reach the summit will find the Shrine of the Sky Monarch, where rare quests and legendary artifacts can be obtained.</p>
+                    <p><strong>Moonlit Blossom Valley (Enchanted Cherry Blossom Forest) :</strong></p>
+                    <p>A magical valley covered in glowing cherry blossoms that bloom year-round. The petals float in the air, and the ground shimmers with soft blue light at night. Spirits of the past wander here, offering cryptic clues to hidden treasures. However, powerful nature guardians ensure that only the worthy may pass through safely.</p>
+                    <p><strong>Jade Serpent River (Mystical Waterway & Secret Caves) :</strong></p>
+                    <p>A radiant jade-green river winds through the map, leading players through breathtaking waterfalls and mysterious caverns. Some caves hide ancient Dragon Spirit Seals, which must be unlocked to awaken the legendary Emerald Serpent, a world boss that grants powerful rewards.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container6">
+        
+        <div class="foot1">
+            <img src="img/Untitled-1.png" width="400px">
+
+        </div>
+        <div class="foot2">
+            <p>Tencent Interactive Entertainment | Terms of Service | Privacy Protection Guidelines | Children's Privacy Protection Guidelines | Tencent Games Recruitment | Tencent Games Customer Service | Game List | Advertising Services and</p>
+        </div>
+        <div class="foot3">
+            <p>Social</p>
+            <div class="foot-text">
+                <img src="img/facebook (1).png" width="8%">
+                <div class="space1"></div>
+                <img src="img/instagram.png" width="8%">
+                <div class="space1"></div>
+                <img src="img/whatsapp.png" width="8%">
+                <div class="space1"></div>
+                <img src="img/telegram.png" width="8%">
+            </div>
+        </div>
+    </div>
+    <script src="Javascript/java.js"></script>
+</body>
+</html>
